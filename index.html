@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【無料公開】台本作成×AIの手順書【クラウドワークス】 | みな｜AI×SNSで在宅収入を叶える主婦</title>
+    <title>【全手順】クラウドワークス×AI 台本作成の手順書 | みな｜AI×SNSで在宅収入を叶える主婦</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,18 +15,18 @@
             theme: {
                 extend: {
                     screens: {
-                        'xs': '375px',
+                        'xs': '375px', // 小型スマホ対応
                         'sm': '480px',
                     },
                     colors: {
                         brand: {
-                            light: '#FAF0EC',
-                            peach: '#FFF5F0',
-                            coral: '#E89A91',
-                            deep: '#DE7A70',
-                            accent: '#D4AF37',
-                            dark: '#4A3E3D',
-                            line: '#06C755'
+                            light: '#FAF0EC', // 優しいピンクベージュ
+                            peach: '#FFF5F0', // 明るいペールピーチ
+                            coral: '#E89A91', // くすみピンク
+                            deep: '#DE7A70',   // 深みのあるコーラルピンク
+                            accent: '#D4AF37', // アクセント用の上品なゴールド
+                            dark: '#4A3E3D',   // 柔らかいダークブラウン（文字用）
+                            line: '#06C755'    // LINE公式カラー
                         }
                     },
                     fontFamily: {
@@ -46,9 +46,11 @@
         .serif-title {
             font-family: 'Shippori Mincho', 'serif';
         }
+        /* コピー時のふわっとしたトーストアニメーション */
         .toast {
             transition: opacity 0.3s ease, transform 0.3s ease;
         }
+        /* 鼓動するアニメーション（LINEボタン用） */
         @keyframes heartbeat {
             0% { transform: scale(1); }
             50% { transform: scale(1.03); }
@@ -73,21 +75,22 @@
             </div>
             
             <p class="text-xs xs:text-sm font-bold text-brand-deep tracking-tight mb-2">
-                特別なスキルがなくても大丈夫！
+                AIを使って在宅ワークの第一歩を踏み出そう！
             </p>
             
             <h1 class="serif-title text-xl xs:text-2xl sm:text-3xl font-extrabold text-brand-dark leading-snug mb-3 px-1">
                 <span class="text-brand-deep block relative inline-block">
-                    台本作成 × AIの手順書
+                    クラウドワークス×AI
                     <span class="absolute left-0 bottom-1 w-full h-2 bg-brand-coral opacity-25 -z-10"></span>
                 </span>
                 <span class="text-brand-deep block relative inline-block">
-                    【クラウドワークス】
+                    台本作成の手順書
                 </span>
+                <span class="text-sm xs:text-base sm:text-lg block mt-1 text-brand-accent font-bold">＋コピペで使えるプロンプト</span>
             </h1>
 
             <p class="text-[10px] xs:text-xs font-medium text-gray-400 mb-5">
-                ＼子どものお昼寝中が「収入」に変わる最短ルート／
+                ＼ お家でできる最初の副業の最短ルート ／
             </p>
 
             <a href="https://www.instagram.com/mina_ai_fukugyo/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3 bg-brand-light/50 hover:bg-brand-light transition-colors p-3 rounded-2xl max-w-sm mx-auto mb-4 border border-brand-light group">
@@ -108,7 +111,8 @@
             </a>
         </header>
 
-        <section class="py-8 px-6">
+        <!-- 追加：「こんなお悩みありませんか？」セクション -->
+        <section class="py-8 px-6 pb-2">
             <div class="bg-white p-5 xs:p-6 rounded-3xl shadow-sm border border-brand-light">
                 <h3 class="text-sm xs:text-base font-bold text-center text-brand-deep mb-5 flex items-center justify-center gap-1">
                     🛀🫧 こんなお悩みありませんか？
@@ -117,15 +121,15 @@
                 <ul class="space-y-4 text-xs xs:text-sm text-brand-dark leading-relaxed">
                     <li class="flex items-start gap-2.5">
                         <span class="text-brand-coral text-base mt-0.5">😰</span>
-                        <span>「家事や育児のスキマ時間に在宅ワークを始めたいけど、<strong>特別なスキルがない…</strong>」</span>
+                        <span>「在宅ワークに興味はあるけれど、<br><strong>特別なスキルがないから私には無理…</strong>」</span>
                     </li>
                     <li class="flex items-start gap-2.5">
                         <span class="text-brand-coral text-base mt-0.5">😰</span>
-                        <span>「家計にゆとりを持たせたいけど、外に働きに出るまとまった時間がとれない」</span>
+                        <span>「文章を書くのが苦手だし、何から始めればいいか分からない」</span>
                     </li>
                     <li class="flex items-start gap-2.5">
                         <span class="text-brand-coral text-base mt-0.5">😰</span>
-                        <span>「AIを使って稼げるって聞くけど、何から始めればいいか分からない」</span>
+                        <span>「家事や育児でまとまった時間がとれない」</span>
                     </li>
                 </ul>
 
@@ -134,78 +138,105 @@
                         その悩み、実は<span class="text-brand-deep font-black bg-brand-peach px-1.5 py-0.5 rounded">ChatGPT×台本作成</span>で解決できます！✊
                     </p>
                     <p class="text-[11px] text-gray-500 mt-2 leading-relaxed">
-                        クラウドワークスでは今、「ChatGPT使用可」「AI歓迎」と<br>明記された台本作成の案件が急増中なんです！
+                        AIを賢く使えば、未経験からでも<br>スキマ時間でサクッとお仕事ができちゃうんです。
                     </p>
                 </div>
-            </div>
-            
-            <div class="mt-6 bg-[#FEF9E7] p-4 rounded-xl border border-yellow-200 text-center">
-                <p class="text-xs font-bold text-brand-dark mb-2">✏️ 台本案件の相場は？</p>
-                <p class="text-[11px] leading-relaxed">
-                    ・ショート動画（1分未満）：<strong class="text-brand-deep">1本800〜1,200円</strong><br>
-                    ・長尺動画（数千文字）：<strong class="text-brand-deep">1本3,000〜12,000円</strong>
-                </p>
-                <p class="text-[10px] text-gray-500 mt-2">作業の型を作れば継続案件につながりやすいのが最大の魅力です .ᐟ.ᐟ</p>
-            </div>
-        </section>
-
-        <section class="py-6 px-6 bg-brand-peach/20">
-            <div class="flex items-center gap-2.5 mb-5">
-                <span class="bg-brand-coral text-white font-black text-xs px-2.5 py-1 rounded-lg shrink-0">準備</span>
-                <h2 class="text-base font-extrabold text-brand-dark">台本案件には「2つのタイプ」があります</h2>
-            </div>
-
-            <p class="text-xs xs:text-sm leading-relaxed mb-4">
-                案件に応募する前に、まずこの違いを知っておくと安心です🙂‍↕️
-            </p>
-
-            <div class="space-y-4 mb-6">
-                <div class="bg-white p-4 rounded-xl border border-brand-light shadow-sm">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-brand-accent text-lg">🥨</span>
-                        <h3 class="text-sm font-bold text-brand-deep">タイプA：本文までAIで出力するタイプ</h3>
-                    </div>
-                    <ul class="text-[11px] text-brand-dark space-y-1.5 ml-7 list-disc">
-                        <li>ChatGPTで構成も本文もまるごと作る</li>
-                        <li>2chまとめ・解説系に多い</li>
-                        <li>量産しやすく初心者向け</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-4 rounded-xl border border-brand-light shadow-sm">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-brand-accent text-lg">🥨</span>
-                        <h3 class="text-sm font-bold text-brand-deep">タイプB：構成づくりが本体のタイプ</h3>
-                    </div>
-                    <ul class="text-[11px] text-brand-dark space-y-1.5 ml-7 list-disc">
-                        <li>本文出力は専用ツール＋クライアント独自のプロンプトで行う</li>
-                        <li>ライターは「面白い構成を考える部分」を担当する</li>
-                        <li>高単価だけど構成力が問われる</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="bg-brand-peach/50 p-4 rounded-xl border border-brand-light text-xs leading-relaxed text-brand-dark">
-                💡 <strong>ワンポイントアドバイス</strong><br>
-                タイプBの案件では「AIに丸投げで全自動」はむしろNGとされることが多いです。構成は自分で考え、AIは形にしてもらう道具と捉えると採用されやすくなります🐰🪴
             </div>
         </section>
 
         <section class="py-6 px-6">
+            <div class="bg-white p-5 xs:p-6 rounded-3xl shadow-sm border border-brand-light">
+                <h3 class="text-sm xs:text-base font-bold text-center text-brand-deep mb-5 flex items-center justify-center gap-1">
+                    💻 今、こんな案件が急増中！
+                </h3>
+                
+                <p class="text-xs xs:text-sm text-brand-dark leading-relaxed text-center mb-4">
+                    クラウドワークスでは今、<br>
+                    <strong>「ChatGPT使用可」「AI歓迎」</strong>と明記された<br>
+                    台本案件が急増しているのをご存知ですか？
+                </p>
+
+                <div class="bg-brand-peach/50 p-4 rounded-xl border border-brand-coral/20 mb-4">
+                    <p class="text-[11px] font-bold text-brand-accent tracking-wider mb-2">✏️ 気になる報酬の目安</p>
+                    <ul class="space-y-3 text-xs xs:text-sm text-brand-dark">
+                        <li class="flex items-center gap-2">
+                            <span class="text-brand-coral text-base mt-0.5">📱</span>
+                            <span><strong>ショート動画（1分未満）：</strong><br>1本800〜1,200円</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-brand-coral text-base mt-0.5">🎞️</span>
+                            <span><strong>長尺動画（数千文字）：</strong><br>1本3,000〜12,000円</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-dashed border-brand-light text-center">
+                    <p class="text-xs xs:text-sm leading-relaxed font-bold">
+                        作業の型を作ってしまえば、<span class="text-brand-deep font-black bg-brand-peach px-1.5 py-0.5 rounded">継続案件につながりやすい</span>のが最大の魅力です！✊
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-6 px-6">
+            <h2 class="text-base font-extrabold text-brand-dark mb-4 text-center border-b-2 border-brand-light pb-2">
+                知っておきたい「2つのタイプ」
+            </h2>
+            <p class="text-xs xs:text-sm leading-relaxed mb-5 text-center">
+                案件に応募する前に、まずこの違いを知っておくと安心です。
+            </p>
+
+            <div class="grid grid-cols-1 gap-4 mb-6">
+                <!-- タイプA -->
+                <div class="bg-white p-4 rounded-2xl border border-brand-light shadow-sm">
+                    <h3 class="text-sm font-bold text-brand-deep mb-2 flex items-center gap-2">
+                        <span class="bg-brand-coral text-white text-[10px] px-2 py-0.5 rounded">タイプA</span>
+                        本文までAIで出力するタイプ
+                    </h3>
+                    <ul class="space-y-1.5 text-xs text-brand-dark">
+                        <li class="flex items-start gap-1.5"><span class="text-brand-accent">・</span> ChatGPTで構成も本文もまるごと作る</li>
+                        <li class="flex items-start gap-1.5"><span class="text-brand-accent">・</span> 2chまとめ・解説系動画に多い</li>
+                        <li class="flex items-start gap-1.5"><span class="text-brand-accent">・</span> 量産しやすく初心者向け</li>
+                    </ul>
+                </div>
+                
+                <!-- タイプB -->
+                <div class="bg-white p-4 rounded-2xl border border-brand-light shadow-sm">
+                    <h3 class="text-sm font-bold text-brand-deep mb-2 flex items-center gap-2">
+                        <span class="bg-brand-coral text-white text-[10px] px-2 py-0.5 rounded">タイプB</span>
+                        構成づくりが本体のタイプ
+                    </h3>
+                    <ul class="space-y-1.5 text-xs text-brand-dark">
+                        <li class="flex items-start gap-1.5"><span class="text-brand-accent">・</span> 本文出力は専用ツール＋クライアント独自のプロンプトで行う</li>
+                        <li class="flex items-start gap-1.5"><span class="text-brand-accent">・</span> ライターは「面白い構成を考える部分」を担当する</li>
+                        <li class="flex items-start gap-1.5"><span class="text-brand-accent">・</span> 高単価だけど構成力が問われる</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-[#FEF9E7] border-l-4 border-yellow-400 p-4 rounded-r-xl text-[10px] xs:text-xs text-brand-dark leading-relaxed">
+                💡 <strong>ワンポイント！</strong><br>
+                タイプBの案件では「AIに丸投げで全自動」はむしろNGとされることが多いです。<br>
+                <strong>「構成は自分で考え、AIは形にしてもらう道具」</strong>と捉えると採用されやすくなります。
+            </div>
+        </section>
+
+        <!-- STEP 1 -->
+        <section class="py-6 px-6 bg-brand-peach/20">
             <div class="flex items-center gap-2.5 mb-5">
                 <span class="bg-brand-coral text-white font-black text-xs px-2.5 py-1 rounded-lg shrink-0">STEP 1</span>
                 <h2 class="text-base font-extrabold text-brand-dark">ChatGPTで構成案を作る</h2>
             </div>
 
             <p class="text-xs xs:text-sm leading-relaxed mb-4">
-                クラウドワークスの依頼文をそのままコピペして、最後にこのプロンプトを付け足すだけでOKです！
+                クラウドワークスの依頼文をそのままコピペして、<br>最後に以下のプロンプトを付け足すだけでOKです！
             </p>
 
             <div class="bg-brand-dark text-white rounded-2xl shadow-md overflow-hidden mb-4">
                 <div class="bg-[#3A302F] px-4 py-3 flex justify-between items-center border-b border-white/10">
                     <div class="flex items-center gap-2">
                         <span class="w-2.5 h-2.5 rounded-full bg-brand-coral"></span>
-                        <span class="text-[11px] text-gray-300 font-bold">コピペOKプロンプト👇🏻</span>
+                        <span class="text-[11px] text-gray-300 font-bold">コピペOKプロンプト</span>
                     </div>
                     <button onclick="copyToClipboard('prompt1', this)" class="text-[10px] text-white bg-brand-coral hover:bg-brand-deep transition-colors px-2.5 py-1 rounded-md font-bold flex items-center gap-1 shrink-0">
                         <i class="fa-regular fa-copy"></i>
@@ -229,29 +260,29 @@
 不明な条件があれば、確認すべき点も教えてください。</pre>
                 </div>
             </div>
-            
-            <p class="text-[11px] text-gray-500 mb-6 pl-2 border-l-2 border-brand-coral">
-                ✍🏻💡 <strong>ワンポイントアドバイス：</strong><br>
-                「不明な条件があれば教えて」を入れておくと、クライアントに事前確認すべき点もChatGPTが洗い出してくれます🌻
+
+            <p class="text-[11px] text-gray-500 bg-white p-3 rounded-xl border border-brand-light">
+                ✍🏻💡 <strong>アドバイス：</strong>「不明な条件があれば教えて」を入れておくと、クライアントに事前確認すべき点もChatGPTが洗い出してくれます🌻
             </p>
         </section>
 
-        <section class="py-6 px-6 bg-brand-peach/10">
+        <!-- STEP 2 (タイプA) -->
+        <section class="py-6 px-6">
             <div class="flex items-center gap-2.5 mb-5">
                 <span class="bg-brand-coral text-white font-black text-xs px-2.5 py-1 rounded-lg shrink-0">STEP 2</span>
-                <h2 class="text-base font-extrabold text-brand-dark">本文生成と構成のブラッシュアップ</h2>
+                <h2 class="text-base font-extrabold text-brand-dark">本文を生成して深掘りする<br><span class="text-[10px] font-normal text-gray-500">（タイプA向け）</span></h2>
             </div>
 
-            <h3 class="text-sm font-bold text-brand-deep mb-3 border-b border-brand-light pb-2">✏️ 本文を生成して深掘りする（タイプA向け）</h3>
-            <p class="text-[11px] leading-relaxed mb-4">
-                構成ができたら、同じチャットで続けて本文を作ってもらいます。一度にすべて書かせるのではなく、<strong>パートごとに段階的に指示を出す</strong>のがポイントです🌻
+            <p class="text-xs xs:text-sm leading-relaxed mb-4">
+                構成ができたら、同じチャットで続けて本文を作ってもらいます。<br>
+                一度にすべて書かせるのではなく、<strong>パートごとに段階的に指示を出す</strong>のがポイントです。
             </p>
 
-            <div class="bg-brand-dark text-white rounded-2xl shadow-md overflow-hidden mb-8">
+            <div class="bg-brand-dark text-white rounded-2xl shadow-md overflow-hidden mb-4">
                 <div class="bg-[#3A302F] px-4 py-3 flex justify-between items-center border-b border-white/10">
                     <div class="flex items-center gap-2">
                         <span class="w-2.5 h-2.5 rounded-full bg-brand-coral"></span>
-                        <span class="text-[11px] text-gray-300 font-bold">コピペOKプロンプト👇🏻</span>
+                        <span class="text-[11px] text-gray-300 font-bold">コピペOKプロンプト</span>
                     </div>
                     <button onclick="copyToClipboard('prompt2', this)" class="text-[10px] text-white bg-brand-coral hover:bg-brand-deep transition-colors px-2.5 py-1 rounded-md font-bold flex items-center gap-1 shrink-0">
                         <i class="fa-regular fa-copy"></i>
@@ -265,23 +296,33 @@
 【文字数の目安】（例：800文字程度）
 【話し方・トーン】（依頼文の指定に合わせる。例：親しみやすい語り口）
 
-セリフやナレーションは、視聴者がすぐに状況をイメージできるよう具体的に書いてください。</pre>
+セリフやナレーションは、視聴者がすぐに状況をイメージできるよう
+具体的に書いてください。</pre>
                 </div>
             </div>
-            <p class="text-[11px] text-gray-500 mb-6 mt-[-20px]">
-                【 】を埋め替えながらパートごとに「ラリー」していくと、精度の高い台本になります .ᐟ.ᐟ
+
+            <p class="text-[11px] text-brand-dark font-bold text-center mt-4">
+                【　】を埋め替えながらパートごとに「ラリー」していくと、<br>精度の高い台本になります！
+            </p>
+        </section>
+
+        <!-- STEP 3 (タイプB) -->
+        <section class="py-6 px-6 bg-brand-peach/10">
+            <div class="flex items-center gap-2.5 mb-5">
+                <span class="bg-brand-coral text-white font-black text-xs px-2.5 py-1 rounded-lg shrink-0">STEP 3</span>
+                <h2 class="text-base font-extrabold text-brand-dark">構成を磨き込む<br><span class="text-[10px] font-normal text-gray-500">（タイプB向け）</span></h2>
+            </div>
+
+            <p class="text-xs xs:text-sm leading-relaxed mb-4">
+                タイプBの案件では、本文より構成の質で差がつきます！<br>
+                ChatGPTを<strong>「壁打ち相手」</strong>にして、構成をどんどん磨いていきましょう。
             </p>
 
-            <h3 class="text-sm font-bold text-brand-deep mb-3 border-b border-brand-light pb-2">📔 構成を磨き込む（タイプB向け）</h3>
-            <p class="text-[11px] leading-relaxed mb-4">
-                タイプBの案件では、本文より構成の質で差がつきます .ᐟ.ᐟ ChatGPTを「壁打ち相手」にして、構成をどんどん磨いていきましょう🌻
-            </p>
-
-            <div class="bg-brand-dark text-white rounded-2xl shadow-md overflow-hidden mb-4">
+            <div class="bg-brand-dark text-white rounded-2xl shadow-md overflow-hidden">
                 <div class="bg-[#3A302F] px-4 py-3 flex justify-between items-center border-b border-white/10">
                     <div class="flex items-center gap-2">
                         <span class="w-2.5 h-2.5 rounded-full bg-brand-coral"></span>
-                        <span class="text-[11px] text-gray-300 font-bold">コピペOKプロンプト👇🏻</span>
+                        <span class="text-[11px] text-gray-300 font-bold">コピペOKプロンプト</span>
                     </div>
                     <button onclick="copyToClipboard('prompt3', this)" class="text-[10px] text-white bg-brand-coral hover:bg-brand-deep transition-colors px-2.5 py-1 rounded-md font-bold flex items-center gap-1 shrink-0">
                         <i class="fa-regular fa-copy"></i>
@@ -289,7 +330,8 @@
                     </button>
                 </div>
                 <div class="p-3 overflow-x-auto">
-                    <pre id="prompt3" class="text-[10px] leading-relaxed font-mono whitespace-pre-wrap select-all">以下の動画台本の構成案について、あなたは視聴者役として率率なフィードバックをください。
+                    <pre id="prompt3" class="text-[10px] leading-relaxed font-mono whitespace-pre-wrap select-all">以下の動画台本の構成案について、あなたは視聴者役として
+率直なフィードバックをください。
 
 【構成案】
 **（ここに①の出力結果や自分で考えた構成を貼る）**
@@ -303,89 +345,229 @@
             </div>
         </section>
 
+        <!-- STEP 4 -->
         <section class="py-6 px-6">
             <div class="flex items-center gap-2.5 mb-5">
-                <span class="bg-brand-coral text-white font-black text-xs px-2.5 py-1 rounded-lg shrink-0">実践</span>
+                <span class="bg-brand-coral text-white font-black text-xs px-2.5 py-1 rounded-lg shrink-0">STEP 4</span>
                 <h2 class="text-base font-extrabold text-brand-dark">案件の探し方</h2>
             </div>
 
             <p class="text-xs xs:text-sm leading-relaxed mb-4">
-                クラウドワークスで以下のキーワードで検索してみてください🔍
+                クラウドワークスで以下のキーワードで検索してみてください。
             </p>
 
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span class="bg-white border border-brand-coral text-brand-deep px-3 py-1.5 rounded-full text-xs font-bold shadow-sm">🔍 「ChatGPT可」</span>
-                <span class="bg-white border border-brand-coral text-brand-deep px-3 py-1.5 rounded-full text-xs font-bold shadow-sm">🔍 「AI 台本」</span>
-                <span class="bg-white border border-brand-coral text-brand-deep px-3 py-1.5 rounded-full text-xs font-bold shadow-sm">🔍 「台本作成」</span>
-                <span class="bg-white border border-brand-coral text-brand-deep px-3 py-1.5 rounded-full text-xs font-bold shadow-sm">🔍 「シナリオ作成」</span>
-            </div>
+            <ul class="space-y-3 mb-6">
+                <li class="bg-white p-3 rounded-xl border border-brand-light shadow-sm flex items-center gap-3">
+                    <span class="text-brand-coral"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span class="text-sm font-bold text-brand-dark">「ChatGPT可」</span>
+                </li>
+                <li class="bg-white p-3 rounded-xl border border-brand-light shadow-sm flex items-center gap-3">
+                    <span class="text-brand-coral"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span class="text-sm font-bold text-brand-dark">「AI 台本」</span>
+                </li>
+                <li class="bg-white p-3 rounded-xl border border-brand-light shadow-sm flex items-center gap-3">
+                    <span class="text-brand-coral"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span class="text-sm font-bold text-brand-dark">「台本作成」「シナリオ作成」</span>
+                </li>
+            </ul>
 
-            <p class="text-[11px] xs:text-xs text-gray-500 leading-relaxed">
+            <p class="text-center text-[11px] xs:text-xs font-bold text-brand-deep">
                 最初は小さな実績からでも、コツコツ積み上げていくのがおすすめです💡´-
             </p>
         </section>
 
-        <!-- LINE誘導セクション（元の文章・構成・文言を100%完全維持） -->
-        <section class="py-12 px-6 bg-gradient-to-b from-brand-peach to-white border-t border-brand-light relative">
+        <!-- 追加：正直にお伝えすると...のセクション -->
+        <section class="py-8 px-6 bg-white">
+            <h2 class="serif-title text-base xs:text-lg font-bold text-center text-brand-dark mb-6 relative inline-block w-full">
+                でも、正直にお伝えすると .ᐟ.ᐟ
+                <span class="block w-12 h-1 bg-brand-coral mx-auto mt-2 rounded-full"></span>
+            </h2>
+
+            <div class="bg-[#FCF7F5] border border-brand-coral/30 rounded-2xl p-5 text-center shadow-sm">
+                <p class="text-xs xs:text-sm leading-relaxed font-bold mb-3 text-brand-dark">
+                    💡 「プロンプトを知っていること」と<br>
+                    <span class="text-brand-deep border-b-2 border-brand-coral">「実際に稼げること」は違います</span>
+                </p>
+                <p class="text-[11px] text-gray-500 leading-relaxed">
+                    何を売るか・最初の1件をどう取るか・いくらに設定するか…<br>
+                    実は、ここでつまずく方がいちばん多いんです🥺
+                </p>
+            </div>
+        </section>
+
+        <!-- 最後に、私から大切なお知らせ（※ご指定通り完全再現） -->
+        <section class="py-12 px-6 bg-gradient-to-b from-brand-peach to-white border-t border-brand-light">
+            <h2 class="serif-title text-base xs:text-lg font-bold text-center text-brand-dark mb-8 relative inline-block w-full">
+                最後に、私から大切なお知らせ
+                <span class="block w-12 h-1 bg-brand-coral mx-auto mt-2 rounded-full"></span>
+            </h2>
+
+            <div class="text-xs xs:text-sm leading-relaxed text-brand-dark text-center space-y-4 mb-8">
+                <p>
+                    台本作成のお仕事は、AIを賢く使うことで<br>
+                    初心者からでも<span class="font-extrabold text-brand-deep bg-brand-light/70 px-1 py-0.5 rounded">「確実な収入」</span>を作りやすいのが特徴です。
+                </p>
+                <p>
+                    最初は1件数千円からでも、継続してお仕事をもらえるようになれば<br>
+                    毎月安定して家庭を支える収入源へと育っていきます。<br>
+                    それが最大の魅力です。
+                </p>
+                <p class="font-bold">
+                    「お家の時間を大切にしながら、まずは手堅く収入を作りたい」<br>
+                    そんなママの第一歩にぴったりの働き方なんです🌱
+                </p>
+            </div>
+
             <div class="bg-[#FCF7F5] border border border-brand-coral/30 rounded-2xl p-5 mb-8">
                 <p class="text-xs xs:text-sm leading-relaxed font-bold text-center mb-4">
-                    でも正直にお伝えすると .ᐟ.ᐟ
+                    💡 ひとつだけ<br>
+                    <span class="text-brand-deep border-b-2 border-brand-coral">正直にお伝えしなければならない現実</span>があります。
                 </p>
-                <div class="bg-white p-4 rounded-xl border border-brand-light/60 text-center text-xs xs:text-sm font-bold text-brand-deep">
-                    💡 「プロンプトを知っていること」と「実際に稼げること」は違います
+                <p class="text-[11px] text-gray-500 mb-4 text-center">
+                    物価は上がり続けているのに、私たちの使えるお金は増えません。<br>
+                    さらにAIの進化で、これまでの働き方は大きく変わりつつあります。
+                </p>
+
+                <div class="space-y-3 bg-white p-4 rounded-xl border border-brand-light/60">
+                    <p class="text-[10px] font-extrabold text-brand-deep text-center mb-1">
+                        ＼ あなたも一度はこう思ったことがありませんか？ ／
+                    </p>
+                    <div class="flex items-start gap-2 text-[11px] xs:text-xs">
+                        <span class="text-brand-coral"><i class="fa-solid fa-square-check"></i></span>
+                        <p class="leading-snug">「このままで、子どもの将来の選択肢をすべて叶えてあげられるかな…」</p>
+                    </div>
+                    <div class="flex items-start gap-2 text-[11px] xs:text-xs">
+                        <span class="text-brand-coral"><i class="fa-solid fa-square-check"></i></span>
+                        <p class="leading-snug">「スーパーの買い物で値上げにため息。<br>毎月家計簿と格闘するのがしんどい…」</p>
+                    </div>
+                    <div class="flex items-start gap-2 text-[11px] xs:text-xs">
+                        <span class="text-brand-coral"><i class="fa-solid fa-square-check"></i></span>
+                        <p class="leading-snug">「在宅ワークを探しても、情報がありすぎて何が正しいのか分からない…」</p>
+                    </div>
                 </div>
-                <p class="text-[11px] text-gray-500 mt-4 text-center leading-relaxed">
-                    何を売るか・最初の1件をどう取るか・いくらに設定するか<br>
-                    ここでつまずく方がいちばん多いんです🥺
-                </p>
             </div>
 
             <p class="text-xs xs:text-sm leading-relaxed text-center font-bold mb-8">
-                実は今…<br>
-                その"一人だと迷う部分"を解決する動画を作成中です👇🏻
+                変わりたいと願いつつ、忙しさに追われて<br>
+                <span class="text-red-500">「何も変わらないまま1年が過ぎる」</span>のが<br>
+                一番もったいない状態です。
             </p>
+
+            <div class="bg-brand-dark text-[#F7F5F5] rounded-3xl p-5 mb-8 shadow-inner relative overflow-hidden">
+                <div class="absolute -right-8 -top-8 w-24 h-24 bg-white/5 rounded-full"></div>
+                <h3 class="text-xs xs:text-sm font-black text-brand-coral tracking-wider text-center mb-3">
+                    💔 実は私も、大失敗だらけでした
+                </h3>
+                <p class="text-[11px] xs:text-xs leading-relaxed mb-3 text-center">
+                    自己流で副業を始め、なんと<br>
+                    <span class="text-brand-coral font-bold text-xs xs:text-sm underline decoration-brand-coral decoration-2">150万円ものお金を失う</span>大失敗を経験しています。
+                </p>
+                <p class="text-[11px] xs:text-xs leading-relaxed text-gray-300 text-center">
+                    「私には才能がないんだ」と落ち込み、<br>
+                    我が子の可愛いおねだりにも笑顔で応えられない自分が本当に情けなくて、<br>
+                    夜中に一人で泣いてばかりいました。
+                </p>
+            </div>
+
+            <div class="text-center mb-8">
+                <p class="text-brand-deep text-lg animate-bounce"><i class="fa-solid fa-circle-chevron-down"></i></p>
+            </div>
 
             <div class="bg-brand-peach p-5 rounded-3xl border border-brand-coral/40 mb-8">
+                <h3 class="text-xs xs:text-sm font-black text-brand-deep text-center mb-3">
+                    ✨ どん底から見つけた「唯一の正解」
+                </h3>
                 <p class="text-[11px] xs:text-xs leading-relaxed text-brand-dark mb-4 text-center">
-                    会社に縛られない自由な働き方を叶えるまでに<br>
-                    わたしがやってきた<br>
-                    再現性バツグンの成果を狙う
+                    どん底の失敗を乗り越え、試行錯誤の末にたどり着いたのが、<br>
+                    未経験の主婦が最短距離で迷わずに<br>
+                    <strong>「お家で稼ぐ力を身につけるロードマップ」</strong>でした。
                 </p>
-                <div class="bg-white p-4 rounded-xl border border-brand-light space-y-2.5 text-left">
-                    <div class="flex items-center gap-2">
-                        <span class="text-xs text-brand-coral">🥨</span>
-                        <p class="text-xs font-bold text-brand-dark">スキマ時間でできる在宅ワークの始め方</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="text-xs text-brand-coral">🥨</span>
-                        <p class="text-xs font-bold text-brand-dark">お金と時間の不安をなくす方法</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="text-xs text-brand-coral">🥨</span>
-                        <p class="text-xs font-bold text-brand-dark">最初の収入を作るまでのリアルな裏側</p>
-                    </div>
+                <div class="bg-white p-3 xs:p-4 rounded-xl border border-brand-light text-center space-y-2">
+                    <p class="text-xs font-bold text-brand-dark">私と今のあなたの違いは、才能ではありません。</p>
+                    <p class="text-[10px] xs:text-xs sm:text-sm font-black text-brand-deep tracking-tighter whitespace-nowrap">
+                        「正しい方法を知って、<br>一歩を踏み出したかどうか」
+                    </p>
+                    <p class="text-[10px] text-gray-400">本当にこれだけなんです。</p>
                 </div>
             </div>
 
-            <p class="text-xs xs:text-sm leading-relaxed text-center font-bold mb-8">
-                近日中にこのLINE限定でお渡しする予定なので<br>
-                見逃さないようにしていてください🧸🌼
+            <p class="text-xs xs:text-sm leading-relaxed text-center font-bold">
+                闇雲に時間を切り売りする内職ではなく、<br>
+                <span class="text-brand-deep bg-yellow-100 px-1 py-0.5 rounded">「AIとインスタ」を賢く味方につけて</span><br>
+                長期的に家庭を支える収入源を作る。<br>
+                これこそが、家族と自分を守る最善の選択肢です！
             </p>
+        </section>
 
-            <div class="mt-4 bg-white p-5 xs:p-6 rounded-3xl shadow-md border border-brand-light text-center">
+        <section class="py-12 px-6 bg-[#FEF6F3] text-center border-t border-brand-light relative">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-accent text-white font-extrabold text-[10px] xs:text-xs px-5 py-2 rounded-full shadow-md tracking-wider whitespace-nowrap">
+                👑 無料で今すぐ手に入る 👑
+            </div>
+
+            <div class="mt-4 bg-white p-5 xs:p-6 rounded-3xl shadow-md border border-brand-light">
+                <span class="text-[10px] font-bold text-brand-deep tracking-wider block mb-1">ノウハウを凝縮した限定デジタルブック</span>
+                <h3 class="serif-title text-lg xs:text-xl font-extrabold text-brand-dark leading-snug mb-1">
+                    『AIマネタイズの教科書』
+                </h3>
+                <p class="text-[10px] text-gray-400 mb-5">公式LINEにお友だち登録していただいた方限定で<br>無料プレゼント中🎁</p>
+
+                <div class="w-full rounded-2xl overflow-hidden shadow-sm border border-brand-light bg-brand-peach/10 mb-5">
+                    <img src="https://i.imgur.com/6RposMA_d.webp?maxwidth=760&fidelity=grand" 
+                         onerror="this.style.display='none';" 
+                         alt="教科書プレゼントイメージ" 
+                         class="w-full h-auto object-cover max-h-[160px]">
+                </div>
+
+                <div class="text-left bg-brand-peach/50 p-4 rounded-2xl border border-brand-light space-y-3 mb-5">
+                    <p class="text-xs font-bold text-brand-deep text-center mb-1 pb-2 border-b border-dashed border-brand-light">
+                        📖 教科書の中身を少しだけご紹介！
+                    </p>
+                    <div class="space-y-2.5">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs text-brand-accent">💎</span>
+                            <p class="text-xs font-bold text-brand-dark"><strong class="text-brand-deep">第一章:</strong> いま一番始めやすいAIマネタイズ手法</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs text-brand-accent">💎</span>
+                            <p class="text-xs font-bold text-brand-dark"><strong class="text-brand-deep">第二章:</strong> ChatGPT収益化プロンプト</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs text-brand-accent">💎</span>
+                            <p class="text-xs font-bold text-brand-dark"><strong class="text-brand-deep">第三章:</strong> AIマネタイズ神テンプレート</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs text-brand-accent">💎</span>
+                            <p class="text-xs font-bold text-brand-dark"><strong class="text-brand-deep">第四章:</strong> マネタイズのための生成AIツール3選</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs text-brand-accent">💎</span>
+                            <p class="text-xs font-bold text-brand-dark"><strong class="text-brand-deep">第五章:</strong> AI×SNSで収益を生むリアル事例</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-[11px] text-brand-dark leading-relaxed mb-5">
+                    私がこれまでに体験した、150万円の損失からようやく掴み取った<br>
+                    「主婦が在宅で本当に成果を出せる現実的なロードマップ」をこの一冊に詰め込みました。
+                </p>
+
+                <div class="bg-[#EEF9F1] border border-[#CDEBD3] p-4 rounded-2xl mb-5 text-left">
+                    <span class="bg-[#06C755]/10 text-[#06C755] font-extrabold text-[9px] px-2 py-0.5 rounded-md">特別企画</span>
+                    <h4 class="text-xs font-bold text-brand-dark mt-1">希望者限定『AI収益化サポート会』の実施</h4>
+                    <p class="text-[10px] text-gray-500 mt-1 leading-relaxed">
+                        LINE読者様限定で、お家で安全に進められる特別なサポート会をご案内しています🌱
+                    </p>
+                </div>
+
                 <a href="https://sub.aione.co.jp/p/ss6dW0WuKBch?ftid=qDv4MLZ6WquT" target="_blank" rel="noopener noreferrer" class="pulse-btn block bg-gradient-to-r from-brand-line via-[#0ddb63] to-brand-line text-white rounded-2xl p-4.5 xs:p-5 shadow-md hover:shadow-lg transition-all group relative overflow-hidden">
                     <div class="absolute -right-6 -bottom-6 w-16 h-16 bg-white/10 rounded-full"></div>
                     <div class="flex items-center justify-center gap-2.5">
                         <i class="fa-brands fa-line text-xl xs:text-2xl"></i>
-                        <span class="font-extrabold tracking-wider text-xs xs:text-sm">近日中にこのLINE限定でお渡しする予定なので見逃さないようにしていてください🧸🌼</span>
+                        <span class="font-extrabold tracking-wider text-xs xs:text-sm">【画像をタップ】公式LINEで無料で受け取る</span>
                     </div>
+                    <p class="text-[9px] mt-1 text-white/95">※配布は期間限定となります。お早めにお受け取りください</p>
                 </a>
             </div>
-            
-            <p class="text-xs text-center text-gray-500 mt-8">
-                ここまで読んでくれて、ありがとうございました🍒<br><br>
-                あなたの"得意"が、世界のどこかの誰かに届きますように。
-            </p>
         </section>
 
         <footer class="bg-brand-dark text-white/70 text-center py-6 px-4 text-[10px] border-t border-white/5 mt-auto">
